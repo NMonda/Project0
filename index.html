@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Counter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="btnContainer">
-   <label  id="countLabel">0</label> <br>
-   <button id="decreaseBtn" class="buttons">decrease</button>
-   <button id="resetBtn" class="buttons">reset</button>
-   <button id="increaseBtn" class="buttons">increase</button>
-    </div>
+    
+<form action="">
+    <h1>Temperature conversion</h1>
+    <input type="number" id="textBox" value="0"><br>
+
+    <input type="radio" id="toFahrenheit" name="unit">
+    <label for="toFahrenheit"> Celsius ➡ Fahrenheit</label><br>
+
+    <input type="radio" id="toCelsius" name="unit">
+    <label for="toCelsius"> Fahrenheit ➡ Celsius</label><br>
+
+    <button type="button" onclick="convert ()">submit</button>
+    <p id="result"></p>
+
+</form>
+
+
+
    <script src="index.js"></script>
 </body>
 </html>
